@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
-  def about
-
+  def calendar
+    @title = 'Calendar'
+    @content = 'This is the calendar page'
   end
 end
