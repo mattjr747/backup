@@ -1,0 +1,6 @@
+<h1>Parking Passes</h1>
+<h2><%=image_tag "ParkingMap1.jpg" %></h2>
+<% @passes.each do |pass| %>
+  <h3><%= pass.title %></h3>
+  <p><%= pass.body %></p>
+<% end %>

@@ -6,7 +6,11 @@
 #
 default: &default
   adapter: sqlite3
+<<<<<<< HEAD
   pool: 5
+=======
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+>>>>>>> 395815b473bc70fb26ece4b33bab9ffaf85a5998
   timeout: 5000
 
 development:
@@ -16,10 +20,20 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
+<<<<<<< HEAD
 test:
+=======
+test: &test
+>>>>>>> 395815b473bc70fb26ece4b33bab9ffaf85a5998
   <<: *default
   database: db/test.sqlite3
 
 production:
   <<: *default
   database: db/production.sqlite3
+<<<<<<< HEAD
+=======
+
+cucumber:
+  <<: *test
+>>>>>>> 395815b473bc70fb26ece4b33bab9ffaf85a5998

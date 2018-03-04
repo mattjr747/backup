@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 require File.expand_path('../boot', __FILE__)
+=======
+require_relative 'boot'
+>>>>>>> 395815b473bc70fb26ece4b33bab9ffaf85a5998
 
 require 'rails/all'
 
@@ -6,6 +10,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+<<<<<<< HEAD
 module Rottenpotatoes
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -22,5 +27,15 @@ module Rottenpotatoes
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+=======
+module ParkingPassPerfection
+  class Application < Rails::Application
+    # Initialize configuration defaults for originally generated Rails version.
+    config.load_defaults 5.1
+
+    # Settings in config/environments/* take precedence over those specified here.
+    # Application configuration should go into files in config/initializers
+    # -- all .rb files in that directory are automatically loaded.
+>>>>>>> 395815b473bc70fb26ece4b33bab9ffaf85a5998
   end
 end
